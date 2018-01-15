@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ManageTeamComponent } from './src/app/cric/teams/manage-team/manage-team.component';
+import { ManageTeamComponent } from './manage-team/manage-team.component';
 
 @NgModule({
   imports: [
