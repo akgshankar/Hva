@@ -1,0 +1,12 @@
+<div class="box">
+  <div class="box-header with-border">
+    <h3 class="box-title">Highlights</h3>
+    <div class="progress-group" *ngFor="let skill of skills">
+      <span class="progress-text">{{skill.title}}</span>
+      <span class="progress-number"><b>{{skill.percentage}}</b>/100</span>
+      <div class="progress sm border-radius-5">
+        <div class="progress-bar progress-bar-{{skill.theme}}" style="width: {{skill.percentage}}%"></div>
+      </div>
+    </div>
+  </div>
+</div>
