@@ -1,0 +1,45 @@
+<md-sidenav-container class="example-container">
+    <md-sidenav #sidenav class="example-sidenav">
+      <section class="sidebar">
+        <div class="user-panel">
+          <div class="pull-left image" style="height:50px;width:50px;">
+            <img src="" class="img-circle" alt="">
+          </div>
+        </div>
+  
+        <ul class="sidebar-menu">
+          <li class="treeview" *ngFor="let menu of menuItems">
+            <a routerLink="/home/{{menu.state}}" class="nav-link" routerLinkActive="active">
+                          <i class="fa fa-{{menu.icon}}"></i> <span>{{menu.title}}</span>
+                      </a>
+          </li>
+        </ul>
+      </section>
+    </md-sidenav>
+  
+    <div class="example-sidenav-content">
+      <div class="container content-wrapper" fxLayout="column" fxFill>
+        <div fxLayout.gt-xs="row" fxLayout="column"  fxLayoutAlign="space-between center">
+          <div>
+            <button type="button"  data-toggle="tooltip" data-placement="top" title="Click to open menu" 
+                    class="btn btn-default px-2 py-1" md-button (click)="sidenav.open()">
+                    <i class="fa fa-navicon" aria-hidden="true"  ></i>                    
+             </button>
+            <span>
+                Welcome to HVA Green energy.
+            </span>
+          </div>
+          <div >
+            <ol class="breadcrumb hva-p-0">
+              <li class="breadcrumb-item"><a href="#"><i class="fa fa-dashboard"></i>Dashboard</a></li>
+              <li class="breadcrumb-item active">Home</li>
+            </ol>
+          </div>
+        </div>
+      <div>
+          <router-outlet></router-outlet>
+      </div>
+        
+      </div>
+    </div>
+  </md-sidenav-container>

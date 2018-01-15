@@ -1,0 +1,7 @@
+To Do:
+- time line
+- projects
+- customers
+- cities 
+- states
+- social media plugin
