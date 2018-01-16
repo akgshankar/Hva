@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Routes, RouterModule } from '@angular/router'
 import { HvaDashboardComponent } from './hva-dashboard/hva-dashboard.component';
 import { NavbarModule } from './navbar/navbar.module';
 import { SidebarModule } from './sidebar/sidebar.module';
-import { MaterialModule } from '@angular/material';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SidenavContentComponent} from './sidebar/sidenav-content/sidenav-content.component';
@@ -46,9 +46,8 @@ export const routes: Routes = [
 @NgModule({
   imports: [
     CommonModule,
-    MaterialModule,
     NavbarModule,
-    SidebarModule, FlexLayoutModule, 
+    SidebarModule, FlexLayoutModule, BrowserAnimationsModule,
     RouterModule.forRoot(routes, { enableTracing: true })
   ],
   exports: [HvaDashboardComponent],
