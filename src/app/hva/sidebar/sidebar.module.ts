@@ -10,8 +10,8 @@ import { CustomersComponent } from './customers/customers.component';
 import { AwardsComponent } from './awards/awards.component';
 import { TeamComponent } from './team/team.component';
 import {
-  MdToolbarModule, MdSidenavModule, MdIconModule, MdCardModule
-  , MdButtonModule, MdTabsModule, MdGridListModule, MdMenuModule,
+  MatToolbarModule, MatSidenavModule, MatIconModule, MatCardModule
+  , MatButtonModule, MatTabsModule, MatGridListModule, MatMenuModule
 }
   from '@angular/material';
 import { FlexLayoutModule } from "@angular/flex-layout";
@@ -23,11 +23,8 @@ import { ExperienceComponent } from './experience/experience.component';
     SidenavContentModule,
     RouterModule,
     FlexLayoutModule,
-    MdToolbarModule,
-    MdSidenavModule,
-    MdIconModule,
-    MdCardModule,
-    MdTabsModule
+    MatToolbarModule, MatSidenavModule, MatIconModule, MatCardModule
+    , MatButtonModule, MatTabsModule, MatGridListModule, MatMenuModule
   ],
   declarations: [SidebarComponent, ServicesComponent, ProjectsComponent, TimelineComponent, CustomersComponent, AwardsComponent, TeamComponent, ExperienceComponent],
   exports: [SidebarComponent]
